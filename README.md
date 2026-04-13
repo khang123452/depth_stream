@@ -15,6 +15,18 @@ If the env already exists:
 conda env update -n lingbot-depth-stream -f environment.yml --prune
 ```
 
+## Install LingBot-Depth (sibling checkout)
+
+```bash
+cd ..
+git clone https://github.com/robbyant/lingbot-depth
+# optional but recommended to keep imports working everywhere (even without the sibling path):
+cd lingbot-depth
+python -m pip install -e .
+```
+
+> The streamer automatically prepends `../lingbot-depth` to `PYTHONPATH`, so the `git clone` is required; the editable install is optional quality-of-life.
+
 ## Run realtime streaming
 
 ```bash
