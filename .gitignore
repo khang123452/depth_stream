@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.idea/
+.vscode/
+.env
+.venv/
+venv/
+env/
+
+# Captured outputs
+captures/*
+!captures/.gitkeep
+
+# Conda
+*.conda
+*.lock
+*.log
+
+# Misc
+pip-wheel-metadata/
+*.egg-info/
